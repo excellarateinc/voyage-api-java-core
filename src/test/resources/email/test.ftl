@@ -1,0 +1,1 @@
+Welcome to ${appName}! This is a the FreeMarker template
