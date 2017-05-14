@@ -73,10 +73,10 @@ uploadArchives {
     repositories {
         //noinspection GroovyAssignabilityCheck
         mavenDeployer {
-            repository(url: mavenRepoSnapshotUrl) {
+            repository(url: mavenRepoReleaseUrl) {
                 authentication(userName: mavenRepoUsername, password: mavenRepoPassword)
             }
-            snapshotRepository(url: mavenRepoReleaseUrl) {
+            snapshotRepository(url: mavenRepoSnapshotUrl) {
                 authentication(userName: mavenRepoUsername, password: mavenRepoPassword)
             }
         }
