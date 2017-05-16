@@ -1,0 +1,25 @@
+#######################################################################################################################
+# Application
+#######################################################################################################################
+app:
+  name: Voyage
+  contact-support:
+    email: support@LighthouseSoftware.com
+    phone: 651-888-6021
+    website: http://LighthouseSoftware.com/support
+  default-country: US
+
+#######################################################################################################################
+# AWS Configuration to send Emails and SMS
+#######################################################################################################################
+cloud:
+  aws:
+    enabled: false
+    stack:
+      auto: false
+    credentials:
+      accessKey: ENTER YOUR CODE
+      secretKey: ENTER YOUR CODE
+    region:
+      auto: true
+      static: us-east-1
