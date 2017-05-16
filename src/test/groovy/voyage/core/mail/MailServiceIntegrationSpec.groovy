@@ -19,10 +19,13 @@ import com.icegreen.greenmail.util.GreenMail
 import com.icegreen.greenmail.util.GreenMailUtil
 import com.icegreen.greenmail.util.ServerSetup
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.test.context.SpringBootTest
+import spock.lang.Specification
 
 import javax.mail.Message
 
-class MailServiceIntegrationSpec {
+@SpringBootTest(webEnvironment=SpringBootTest.WebEnvironment.RANDOM_PORT)
+class MailServiceIntegrationSpec extends Specification {
 
     @Autowired
     MailService mailService
