@@ -24,7 +24,7 @@ import spock.lang.Specification
 
 import javax.mail.Message
 
-@SpringBootTest(webEnvironment=SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest
 class MailServiceIntegrationSpec extends Specification {
 
     @Autowired
