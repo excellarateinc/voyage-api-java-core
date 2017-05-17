@@ -23,3 +23,21 @@ cloud:
     region:
       auto: true
       static: us-east-1
+#######################################################################################################################
+# Spring configuration
+#######################################################################################################################
+spring:
+
+  mail:
+    host: localhost
+    port: 3025
+    overrideAddress: testmsg@LighthouseSoftware.com
+
+  freemarker:
+    template-loader-path: classpath:/templates/
+    charset: UTF-8
+    suffix: .ftl
+
+  autoconfigure:
+      exclude:
+        - org.springframework.cloud.aws.autoconfigure.mail.MailSenderAutoConfiguration
