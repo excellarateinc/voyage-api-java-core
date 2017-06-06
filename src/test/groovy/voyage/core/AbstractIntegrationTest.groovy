@@ -22,9 +22,11 @@ import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpMethod
 import org.springframework.http.ResponseEntity
+import org.springframework.test.context.TestPropertySource
 import spock.lang.Specification
 
 @SpringBootTest(webEnvironment=SpringBootTest.WebEnvironment.RANDOM_PORT)
+@TestPropertySource(locations=['file:./src/main/resources/application.properties', 'classpath:test.properties'])
 class AbstractIntegrationTest extends Specification {
 
     @Autowired

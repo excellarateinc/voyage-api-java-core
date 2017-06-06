@@ -5,7 +5,7 @@ import org.springframework.boot.gradle.run.BootRunTask
 // ****************************************************************************
 buildscript {
     ext {
-        springBootVersion = '1.4.2.RELEASE'
+        springBootVersion = '1.5.3.RELEASE'
     }
     repositories {
         // Public Maven Repository (default). Remove this if your environment doesn't allow direct repo access
@@ -88,7 +88,7 @@ uploadArchives {
 // ****************************************************************************
 dependencies {
     // Groovy
-    compile group: 'org.codehaus.groovy',           name: 'groovy-all',                         version: '2.4.7'
+    compile group: 'org.codehaus.groovy',           name: 'groovy-all',                         version: '2.4.10'
 
     // Spring
     compile group: 'org.springframework.boot',      name: 'spring-boot-starter',                version: "${springBootVersion}"
@@ -104,8 +104,8 @@ dependencies {
     testCompile(group: 'org.springframework.boot',  name: 'spring-boot-starter-test',           version: "${springBootVersion}") {
         exclude(module: 'commons-logging')
     }
-    testCompile group: 'org.spockframework',        name: 'spock-core',                         version: '1.1-groovy-2.4-rc-3'
-    testCompile group: 'org.spockframework',        name: 'spock-spring',                       version: '1.1-groovy-2.4-rc-3'
+    testCompile group: 'org.spockframework',        name: 'spock-core',                         version: '1.1-groovy-2.4'
+    testCompile group: 'org.spockframework',        name: 'spock-spring',                       version: '1.1-groovy-2.4'
     testCompile group: 'cglib',                     name: 'cglib-nodep',                        version: '3.2.4'
     testCompile group: 'org.apache.httpcomponents', name: 'httpclient'
     testCompile group: 'com.icegreen',              name: 'greenmail',                          version: '1.5.2'
@@ -171,7 +171,7 @@ test.finalizedBy(project.tasks.cobertura)
 // Gradle Wrapper Config
 // ****************************************************************************
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.3'
+    gradleVersion = '3.5'
 }
 
 // ****************************************************************************
