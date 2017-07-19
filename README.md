@@ -1,7 +1,7 @@
 # Overview
 
-## Installation Instructions
-  - Download the Source from github Repository
+## Setup Instructions
+  - Clone the source from github Repository https://github.com/lssinc/voyage-api-java-core.git
   - Download Nexus Repository Manager from: https://www.sonatype.com/nexus-repository-oss
   - Unzip the downloaded folder
   - Add the folder path to NEXUS_HOME environment variable and path variable
